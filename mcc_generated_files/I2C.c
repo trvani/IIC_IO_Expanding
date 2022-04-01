@@ -32,6 +32,23 @@ void I2C_ReStart(void)
 	SSP1IF = 0;			// Clear the flag bit
 }
 
+void I2C_Send(unsigned char byte){ //slave'e byte data gönderdik
+	
+	I2C1TRN=byte; //Eğer adres bit 0 = 0 ise yazma için, 1 se okuma gibi
+
+	while (I2C1STATbits.TRSTAT)
+	{
+		;	
+	}//işte aktarım tamamlancak
+	
+	if (I2C1STATbits.ACKSTAT) //sonra eğer high ise bu ack = false
+	{
+		//
+		while(1){ }// burda sıkışcak infinite loop ta, chip does not ack back
+	}
+	
+}
+
 
 //Function : I2C_Stop sends stop bit sequence
 void I2C_Stop(void)

@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+
 #define Device_Address 0x40 
 
 unsigned short mask(unsigned short temp) {
@@ -62,7 +63,7 @@ unsigned short mask(unsigned short temp) {
 unsigned short i, k, disp, num = 0;
 
 /*
-                         Main application
+  Main application
  */
 void main(void)
 {
@@ -114,6 +115,9 @@ void main(void)
         
     }
 }
+
+
+
 /**
  End of File
 */
