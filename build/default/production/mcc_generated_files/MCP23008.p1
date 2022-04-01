@@ -1,0 +1,68 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"6 mcc_generated_files/MCP23008.c
+[; ;mcc_generated_files/MCP23008.c: 6:     I2C_Open(0x40);
+[c E355 0 1 2 .. ]
+[n E355 . I2C_NOERR I2C_BUSY I2C_FAIL  ]
+"101 mcc_generated_files/examples/../i2c_master.h
+[v _I2C_Open `(E355 ~T0 @X0 0 ef1`uc ]
+"58 mcc_generated_files/examples/i2c_master_example.h
+[; ;mcc_generated_files/examples/i2c_master_example.h: 58: void I2C_WriteNBytes(i2c_address_t address, uint8_t *data, size_t len);
+[v _I2C_WriteNBytes `(v ~T0 @X0 0 ef3`uc`*uc`ui ]
+"111 mcc_generated_files/examples/../i2c_master.h
+[v _I2C_Close `(E355 ~T0 @X0 0 ef ]
+"4 mcc_generated_files/MCP23008.c
+[; ;mcc_generated_files/MCP23008.c: 4: void MCP23008_Output(unsigned int condition)
+[v _MCP23008_Output `(v ~T0 @X0 1 ef1`ui ]
+"5
+[; ;mcc_generated_files/MCP23008.c: 5: {
+{
+[e :U _MCP23008_Output ]
+"4
+[; ;mcc_generated_files/MCP23008.c: 4: void MCP23008_Output(unsigned int condition)
+[v _condition `ui ~T0 @X0 1 r1 ]
+"5
+[; ;mcc_generated_files/MCP23008.c: 5: {
+[f ]
+"6
+[; ;mcc_generated_files/MCP23008.c: 6:     I2C_Open(0x40);
+[e ( _I2C_Open (1 -> -> 64 `i `uc ]
+"8
+[; ;mcc_generated_files/MCP23008.c: 8:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"9
+[; ;mcc_generated_files/MCP23008.c: 9:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"10
+[; ;mcc_generated_files/MCP23008.c: 10:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"11
+[; ;mcc_generated_files/MCP23008.c: 11:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"12
+[; ;mcc_generated_files/MCP23008.c: 12:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"13
+[; ;mcc_generated_files/MCP23008.c: 13:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"14
+[; ;mcc_generated_files/MCP23008.c: 14:         I2C_WriteNBytes(0x40,0x18,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 24 `i `*uc -> -> 1 `i `ui ]
+"15
+[; ;mcc_generated_files/MCP23008.c: 15:         I2C_WriteNBytes(0x40,0xFF,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 255 `i `*uc -> -> 1 `i `ui ]
+"16
+[; ;mcc_generated_files/MCP23008.c: 16:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"17
+[; ;mcc_generated_files/MCP23008.c: 17:         I2C_WriteNBytes(0x40,0x00,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> -> 0 `i `*uc -> -> 1 `i `ui ]
+"18
+[; ;mcc_generated_files/MCP23008.c: 18:         I2C_WriteNBytes(0x40,condition,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 64 `i `uc -> _condition `*uc -> -> 1 `i `ui ]
+"19
+[; ;mcc_generated_files/MCP23008.c: 19:         I2C_Close();
+[e ( _I2C_Close ..  ]
+"54
+[; ;mcc_generated_files/MCP23008.c: 54: }
+[e :UE 3 ]
+}
